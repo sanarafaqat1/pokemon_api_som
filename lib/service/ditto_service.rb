@@ -21,8 +21,4 @@ class PokemonApiService
   def get_url
     @pokemon_data['abilities'][0]['ability']['url']
   end
-
-  # def get_slot
-  #   @pokemon_data['abilities'][0][1]
-  # end
 end

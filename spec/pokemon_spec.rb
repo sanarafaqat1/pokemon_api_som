@@ -22,8 +22,4 @@ describe PokemonApiService do
   it 'the url should be a string' do
     expect(@ditto_service.get_url).to be_kind_of String
   end
-
-  it 'the slot should be an integer' do
-    expect(@ditto_service.get_slot).to be_kind_of Integer
-  end
 end
