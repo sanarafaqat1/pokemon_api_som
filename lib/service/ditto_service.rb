@@ -34,7 +34,7 @@ class PokemonApiService
     @pokemon_data['base_experience']
   end
 
-  def get_forms
-    @pokemon_data['forms']
+  def get_game_index
+    @pokemon_data['game_indices'][0]['game_index']
   end
 end

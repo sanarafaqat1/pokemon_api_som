@@ -34,4 +34,8 @@ describe PokemonApiService do
   it 'should show base_experience to be Integer' do
     expect(@ditto_service.get_base_experience).to be_kind_of Integer
   end
+
+  it 'the game index should return as an integer' do
+    expect(@ditto_service.get_game_index).to be_kind_of Integer
+  end
 end
