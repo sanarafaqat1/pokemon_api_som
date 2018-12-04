@@ -21,4 +21,20 @@ class PokemonApiService
   def get_url
     @pokemon_data['abilities'][0]['ability']['url']
   end
+
+  def get_slot
+    @pokemon_data['abilities'][0]['slot']
+  end
+
+  def get_is_hidden?
+    @pokemon_data['abilities'][0]['is_hidden']
+  end
+
+  def get_base_experience
+    @pokemon_data['base_experience']
+  end
+
+  def get_forms
+    @pokemon_data['forms']
+  end
 end

@@ -22,4 +22,16 @@ describe PokemonApiService do
   it 'the url should be a string' do
     expect(@ditto_service.get_url).to be_kind_of String
   end
+
+  it 'the slot should be a Integer' do
+    expect(@ditto_service.get_slot).to be_kind_of Integer
+  end
+
+  it 'the is_hidden should be a Boolean' do
+    expect(@ditto_service.get_is_hidden?).to be(true).or be(false)
+  end
+
+  it 'should show base_experience to be Integer' do
+    expect(@ditto_service.get_base_experience).to be_kind_of Integer
+  end
 end
